@@ -1,0 +1,14 @@
+{
+  "name": "proyect-cow",
+  "version": "1.0.0",
+  "description": "For cows use only",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Francisco Aranguren, Jhonattan Rodriguez, Brayan Cajica",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.13"
+  }
+}
