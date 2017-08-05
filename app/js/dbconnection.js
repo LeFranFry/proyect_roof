@@ -1,7 +1,8 @@
 var mysql = require('mysql');
 var connection;
 
-export.connection = function(){
+export.start = function(){
+  //Aca va la informacion de conexion a la db.
   connection = mysql.createConnection({
      host: 'localhost',
      user: 'root',
@@ -18,7 +19,4 @@ export.connection = function(){
   });
   return connection;
 }
-
-export.end = function(){
-  connection.end();
-}
+//Nota: Cada vez que llamen este módulo, no olviden cerrar la Conexion
